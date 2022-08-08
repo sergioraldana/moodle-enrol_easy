@@ -96,7 +96,7 @@ if ($mform->get_data()) {
     }
     else {
         echo $OUTPUT->header();
-        echo get_string('error_invalid_code', 'enrol_easy');
+        echo $OUTPUT->notification(get_string('error_invalid_code', 'enrol_easy'), 'danger');
         $mform->display();
         echo $OUTPUT->footer();
         exit;
